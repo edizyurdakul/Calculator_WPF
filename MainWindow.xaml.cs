@@ -195,9 +195,6 @@ namespace Calculator_LearningActivity_5
 
         private void ce_Click(object sender, RoutedEventArgs e)
         {
-            Trace.WriteLine(firstNum);
-            Debug.WriteLine("Test");
-
             if (operatorSelection == "")
             {
                firstNum = 0;
@@ -206,8 +203,6 @@ namespace Calculator_LearningActivity_5
                secondNum = 0;
             }
             Display.Content = 0;
-            Debug.WriteLine("Test");
-
         }
 
         private void c_Click(object sender, RoutedEventArgs e)
@@ -216,7 +211,6 @@ namespace Calculator_LearningActivity_5
             secondNum = 0;
             operatorSelection = "";
             Display.Content = firstNum;
-
         }
 
         private void equal_Click(object sender, RoutedEventArgs e)
@@ -225,15 +219,27 @@ namespace Calculator_LearningActivity_5
             {
                 case "+":
                     Display.Content = firstNum + secondNum;
+                    firstNum = 0;
+                    secondNum = 0;
+                    operatorSelection = "";
                     break;
                 case "-":
                     Display.Content = firstNum - secondNum;
+                    firstNum = 0;
+                    secondNum = 0;
+                    operatorSelection = "";
                     break;
                 case "*":
                     Display.Content = firstNum * secondNum;
+                    firstNum = 0;
+                    secondNum = 0;
+                    operatorSelection = "";
                     break;
                 case "/":
                     Display.Content = firstNum / secondNum;
+                    firstNum = 0;
+                    secondNum = 0;
+                    operatorSelection = "";
                     break;
                 default: break;
             }
