@@ -27,29 +27,31 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <Label Foreground="LightGray" Grid.Row="1" Grid.Column="4" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Width="22">0</Label>
-        
-        <Button x:Name="switchPlusMinus" Content="+/-" Grid.Row="6" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="zero" Content="0" Grid.Row="6" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
+        <Label x:Name="Display" Foreground="LightGray" Grid.Row="1" Grid.Column="1" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.ColumnSpan="4">0</Label>
+
+        <Button x:Name="switchPlusMinus" Content="+/-" Grid.Row="6" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="switchPlusMinus_Click"/>
+        <Button x:Name="zero" Content="0" Grid.Row="6" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="zero_Click"/>
         <Button x:Name="dot" Content="." Grid.Row="6" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="equal" Content="=" Grid.Row="6" Grid.Column="4" BorderBrush="#000" Foreground="LightGray" Background="#FF333333"/>
+        <Button x:Name="equal" Content="=" Grid.Row="6" Grid.Column="4" BorderBrush="#000" Foreground="LightGray" Background="#FF333333" Click="equal_Click"/>
 
-        <Button x:Name="one" Content="1" Grid.Row="5" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="two" Content="2" Grid.Row="5" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="three" Content="3" Grid.Row="5" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="plus" Content="+" Grid.Row="5" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray" />
+        <Button x:Name="one" Content="1" Grid.Row="5" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="one_Click"/>
+        <Button x:Name="two" Content="2" Grid.Row="5" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="two_Click"/>
+        <Button x:Name="three" Content="3" Grid.Row="5" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="three_Click"/>
+        <Button x:Name="plus" Content="+" Grid.Row="5" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="plus_Click" />
 
-        <Button x:Name="four" Content="4" Grid.Row="4" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="five" Content="5" Grid.Row="4" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="six" Content="6" Grid.Row="4" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="minus" Content="-" Grid.Row="4" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
+        <Button x:Name="four" Content="4" Grid.Row="4" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="four_Click"/>
+        <Button x:Name="five" Content="5" Grid.Row="4" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="five_Click"/>
+        <Button x:Name="six" Content="6" Grid.Row="4" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="six_Click"/>
+        <Button x:Name="minus" Content="-" Grid.Row="4" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="minus_Click"/>
 
-        <Button x:Name="seven" Content="7" Grid.Row="3" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="eight" Content="8" Grid.Row="3" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="nine" Content="9" Grid.Row="3" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
-        <Button x:Name="times" Content="-" Grid.Row="3" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
+        <Button x:Name="seven" Content="7" Grid.Row="3" Grid.Column="1" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="seven_Click"/>
+        <Button x:Name="eight" Content="8" Grid.Row="3" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="eight_Click"/>
+        <Button x:Name="nine" Content="9" Grid.Row="3" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="nine_Click"/>
+        <Button x:Name="times" Content="x" Grid.Row="3" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="times_Click"/>
 
-        <Button x:Name="divide" Content="/" Grid.Row="2" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray"/>
+        <Button x:Name="CE" Content="CE" Grid.Row="2" Grid.Column="2" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="ce_Click"/>
+        <Button x:Name="C" Content="C" Grid.Row="2" Grid.Column="3" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="c_Click"/>
+        <Button x:Name="divide" Content="/" Grid.Row="2" Grid.Column="4" Background="#333" BorderBrush="#000" Foreground="LightGray" Click="divide_Click"/>
 
     </Grid>
 </Window>
